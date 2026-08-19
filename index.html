@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <form action="/register" method="post">
+        <label for="fullName" >Full Name</label>
+        <input type="text", id="fullName", name="fullName", placeholder="enter name..">
+        <br>
+        <label for="email"> University Email</label>
+        <input type="email", id="email" name="" placeholder="enter email" required>
+        <br>
+        <label for="age">Age(17-30)</label>
+        <input type="number", id="age" name="age">
+        <br>
+        <label for="date">DOB</label>
+        <input type="date" name="date" id="date" placeholder="enter dob">
+        <br>
+        <label for="gender">Gender</label>
+        <input type="radio" value="male" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" value="female" name="gender" id="female">
+        <label for="female">Female</label>
+        <br>
+        <label for="">Skills</label> <br>
+        <input type="checkbox" id="java" name="" value="">
+        <label for="java">Java</label> <br>
+        <input type="checkbox" id="javascript" name="" value="">
+        <label for="javascript">Javascript</label> <br>
+        <input type="checkbox" id="mongodb" name="" value="">
+        <label for="mongodb">mongodb</label>
+        <br>
+        <label for="branch">select branch</label>
+        <select name="" id="branch">
+            <option value="cse" id="">cse</option>
+            <option value="it" id="">it</option>
+            <option value="mech" id="">mech</option>
+        </select>
+        <button type="submit">submit</button>
+
+    </form>
+</body>
+</html>

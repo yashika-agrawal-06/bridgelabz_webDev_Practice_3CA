@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Internship Application Form</h1>
+    <form>
+        <label for="name">Enter your fullname : </label>
+        <Input type="text", id="name", name="name" placeholder="xyz" required>
+        <br>
+        <label for="email"> enter your email address : </label>
+        <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+        <br>
+        <label for="phone">enter your mobile no. : </label>
+        <input type="tel" id="phone" name="phone" placeholder="0000000000">
+        <br>
+        <label for="dob">enter your DOB</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+        <label for="password">enter your password : </label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="gender">Choose your gender : </label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+        <br>
+        <label for="course">select your course: </label>
+        <select name="branch" id="branch">
+            <option value="cse" id="cse"> cse </option>
+            <option value="it" id="it">it</option>
+            <option value="ece" id="ece">ece</option>
+            <option value="mech" id="mech">mech</option>
+        </select>
+        <br>
+        <label for="preference"> internship preference </label>
+        <input type="radio" name="pref" id="remote">
+        <label for="remote">remote</label>
+        <input type="radio" name="pref" id="onsite">
+        <label for="onsite">onsite</label>
+        <input type="radio" name="pref" id="hybrid">
+        <label for="hybrid">hybrid</label>
+        <br>
+        <label for="resume">upload your resume here : </label>
+        <input type="file" name="res" id="resume">
+        <br>
+        <label for="cover">Add your cover letter here : </label>
+        <input type="textarea" id="cover" nname="cover">
+        <br>
+        <label for="submit"> click  here to submit your form </label>
+        <button type="submit" id="submit">submit</button>
+        <br>
+        <label for="reset"> click here to reset your form </label>
+        <button type="reset" id="reset">reset</button>
+        <br>
+
+
+    </form>
+</body>
+</html>
