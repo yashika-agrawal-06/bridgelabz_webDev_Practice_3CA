@@ -4,44 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./inde.css"
+
+
+
 </head>
 <body>
-    <h1>hello world</h1>
-    <form action="/register" method="post">
+    <h1>student registration portal</h1>
+    <form action="/register" method="post" class="form-container">
+        <p>
+
         <label for="fullName" >Full Name</label>
+        <br>
         <input type="text", id="fullName", name="fullName", placeholder="enter name..">
-        <br>
+        </p>
+        
+        <p>
         <label for="email"> University Email</label>
+        <br>
         <input type="email", id="email" name="" placeholder="enter email" required>
-        <br>
+        </p>
+        
+        <p>
         <label for="age">Age(17-30)</label>
+        <br>
         <input type="number", id="age" name="age">
-        <br>
+        </p>
+        
+        <p>
         <label for="date">DOB</label>
-        <input type="date" name="date" id="date" placeholder="enter dob">
         <br>
+        <input type="date" name="date" id="date" placeholder="enter dob">
+       
+        </p>
+        <p>
         <label for="gender">Gender</label>
         <input type="radio" value="male" name="gender" id="male">
         <label for="male">Male</label>
         <input type="radio" value="female" name="gender" id="female">
         <label for="female">Female</label>
+        
+        </p>
+        <p>
+        <label for="" text-align="center">Skills</label> <br>
         <br>
-        <label for="">Skills</label> <br>
         <input type="checkbox" id="java" name="" value="">
-        <label for="java">Java</label> <br>
+        <label for="java">Java</label> 
         <input type="checkbox" id="javascript" name="" value="">
-        <label for="javascript">Javascript</label> <br>
+        <label for="javascript">Javascript</label> 
         <input type="checkbox" id="mongodb" name="" value="">
         <label for="mongodb">mongodb</label>
-        <br>
+        </p>
+       
+        <p>
         <label for="branch">select branch</label>
+        <br>
         <select name="" id="branch">
             <option value="cse" id="">cse</option>
             <option value="it" id="">it</option>
             <option value="mech" id="">mech</option>
         </select>
-        <button type="submit">submit</button>
+        </p>
+
+        <p>
+            <label for="note">Notes:</label>
+            <br>
+            <textarea name="note" id="note" style="width:100%; height:70px;" cols="30" rows="10" placeholder="write something..."></textarea>
+            <hr>
+        </p>
+
+          
+      
+      <p>
+        <button type="submit" text-align="center">submit</button></p>
 
     </form>
+    <label for="">map: </label>
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3538.799800751239!2d77.66463202524632!3d27.50660097629814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973717059e243b7%3A0xde51985c4c0120a!2sJanam%20Bhumi%2C%20Mathura%2C%20Uttar%20Pradesh%20281001!5e0!3m2!1sen!2sin!4v1787139298310!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      
 </body>
 </html>

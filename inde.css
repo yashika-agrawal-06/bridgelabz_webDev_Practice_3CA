@@ -1,0 +1,90 @@
+/* *{
+    margin:0px;
+    padding:0px;          ffor universal selector to remove default margin and padding of all elements
+    box-sizing:border-box;
+}*/
+        
+        body{
+            background-color: #f2f2f2;
+            box-sizing:border-box;
+        }
+
+        /*form{
+            height:400px;
+            width:400px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:30px auto;
+            text-align: center;
+        }*/
+        hr{
+            border:0.5px solid black;
+            
+        }
+
+        h1{
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        
+        input, select, textarea{  
+            border:1px solid rgb(0, 6, 18);
+            border-radius:2px;
+            box-sizing:border-box; 
+            width:100%;
+            padding:9px;
+            
+        }
+        
+        input[type="radio"], input[type="checkbox"]{
+
+            width:auto;} 
+
+        label{
+            font-family: sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+       
+            
+        /*input[type="submit"]{
+            display:block;
+            margin: auto;
+        }*/
+        button{
+            width:50%;
+            cursor:pointer;
+            display:block;
+            margin:auto;
+            border:1px solid #100101
+        }
+
+        /*.form-container button[type="submit"]{
+            display:block;
+            margin:0 auto;
+        }*/
+
+        .form-container{
+            height:auto;
+            width:400px;
+            border:1px solid black;
+            border-radius:10px;
+            margin:0 auto 30px;
+            padding:20px;
+            background-color: white;
+           
+        }
+        #fullName{
+            border:1px solid rgb(0, 18, 18);
+            border-radius:2px;
+            width:100%;     /*we can do this way separately for one element or use input block to give styling to every input element same like above*/
+            padding:8px;
+        }
+
+        
+
+        
+       
+

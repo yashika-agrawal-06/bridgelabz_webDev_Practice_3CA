@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0; 
+            
+        }
+
+        .header {
+            background-color: #f79ddf; 
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(32, 207, 32, 0.1);
+        }
+
+        .header .logo {
+            color: #010908; 
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .header .user {
+            color: #120105;
+            font-size: 0.9rem;
+        }
+
+        .feed-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            gap: 40px; 
+        }
+
+       
+        .post-card {
+            background-color: rgba(235, 245, 238, 0.65); 
+            border-radius: 12px;
+            padding: 24px;
+            width: 100%;
+            max-width: 580px;
+            position: relative; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+        }
+
+    
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 25px;
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-verified {
+            background-color: #cbe0fc;
+            color: #5582d2;
+        }
+
+        .badge-trending {
+            background-color: #f7ded3;
+            color: #c47d69;
+        }
+
+       
+        .post-header {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .author-name {
+            font-weight: 700;
+            color: #677161;
+        }
+
+        .author-meta {
+            color: #8c9b91;
+            margin-left: 4px;
+        }
+
+        
+        .post-content {
+            font-size: 1.05rem;
+            line-height: 1.5;
+            color: #5e6d63;
+        }
+
+        .fab {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #e030a8; 
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 14px 28px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: background-color 0.2s ease;
+        }
+
+        .fab:hover {
+            background-color: #8388da;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">DevConnect</div>
+        <div class="user">@yashika_dev</div>
+    </header>
+
+    <main class="feed-container">
+
+        <article class="post-card">
+            <div class="badge badge-verified">Verified Author</div>
+            <div class="post-header">
+                <span class="author-name">Alex Rivera</span>
+                <span class="author-meta">@alex_tech  2h ago</span>
+            </div>
+            <p class="post-content">
+                Just deployed our Node.js microservice to production. Latency dropped by 40% using Redis caching! 
+            </p>
+        </article>
+
+       
+        <article class="post-card">
+            <div class="badge badge-trending">Trending</div>
+            <div class="post-header">
+                <span class="author-name">Tech Careers India</span>
+                <span class="author-meta">@tech_jobs  5h ago</span>
+            </div>
+            <p class="post-content">
+                Top skills hiring managers are looking for in 2026: System Design, AI integration, and core CSS layout mastery.
+            </p>
+        </article>
+
+      
+        <article class="post-card">
+            
+            <div class="post-header">
+                <span class="author-name">Frontend Daily</span>
+                <span class="author-meta">@frontend_tips  1d ago</span>
+            </div>
+            <p class="post-content">
+                Remember: position: absolute looks for the nearest parent with position: relative. If it doesn't find one, it anchors to the viewport!
+            </p>
+        </article>
+
+    </main>
+
+    <button class="fab">New Post</button>
+</body>
+</html>

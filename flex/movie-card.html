@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards-container{
+            
+            background-color:rgb(253, 253, 253);
+            font-family:sans-serif;
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+           /* grid-template-rows: repeat(3,33%);
+            grid-row-gap:10%;
+            */
+            gap:50px;
+           
+            justify-items: center;
+          
+            
+        }
+        .movie-card{
+            width:200px;
+            border: 1px solid;
+            border-color:#e5e7eb;
+            background-color:white;
+            border-radius:16px;
+            overflow:hidden;
+            display:flex;
+            flex-direction:column;
+            transition:all 0.2s;
+            
+            
+            
+        }
+
+        .movie-card:hover{
+            
+            transform:scaleY(1.1);
+        }
+        .movie-image img{
+            width:100%;
+            height:auto;
+            object-fit:cover;
+            display:flex;
+        }
+        .movie-title{
+            font-weight:600;
+
+        }
+        .movie-info{
+            padding:8px;
+        }
+        .movie-detail{
+            color:gray;
+        }
+        .headingss{
+            text-align:center;
+            font-family:sans-serif;
+            margin:20px 0px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="headingss">
+            <h2>recommended movies</h2>
+        
+    </div>
+    <div class="cards-container">
+        
+        
+    
+        <div class="movie-card">
+            
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS43LzEwICA0OUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00507738-kfbeunsutt-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Hanuman Ansh</div>
+                <span class="movie-detail">devotional/drama</span>
+
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Mirzapur: the movie</div>
+                <span class="movie-detail">action/crime/thriller</span>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MS42TSsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00378770-aqvqxdpnut-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Toxic: A fairy tale for grown-ups</div>
+                <span class="movie-detail">action/crime/period/thriller</span>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Awarapan 2</div>
+                <span class="movie-detail">action/crime/romantic</span>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Awarapan 2</div>
+                <span class="movie-detail">action/crime/romantic</span>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Mirzapur: the movie</div>
+                <span class="movie-detail">action/crime/thriller</span>
+            </div>
+        </div>
+        <div class="movie-card">
+            <div class="movie-image">
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg">
+            </div>
+            <div class="movie-info">
+                <div class="movie-title">Mirzapur: the movie</div>
+                <span class="movie-detail">action/crime/thriller</span>
+            </div>
+        </div>
+
+        <!--difference between grid and flex-->
+       
+
+
+    </div>
+    
+</body>
+</html>
