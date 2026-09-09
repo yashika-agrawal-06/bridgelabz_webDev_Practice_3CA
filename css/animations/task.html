@@ -4,41 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .body{
+            background-color:aliceblue;
+        
+        }
         .cards-container{
-            
-            background-color:rgb(253, 253, 253);
+            max-width:800px;
+            margin:0 auto;
+            background-color:aliceblue;
             font-family:sans-serif;
             display:grid;
-            grid-template-columns: repeat(3,1fr);
-           /* grid-template-rows: repeat(3,33%);
-            grid-row-gap:10%;
-            */
+            grid-template-columns:repeat(3,5fr);
+            justify-items:center;
+            align-items:center;
             gap:50px;
-           
-            justify-items: center;
-          
             
+
         }
         .movie-card{
             width:200px;
-            border: 1px solid;
+            border:1px solid;
             border-color:#e5e7eb;
             background-color:white;
-            border-radius:16px;
+            border-radius:12px;
             overflow:hidden;
-            
             flex-direction:column;
+            
             transition:all 0.2s;
             animation:cardAnimation 0.6s ease;
-            
-            
-            
-        }
-
-        .movie-card:hover{
-            
-            transform:scaleY(1.1);
         }
         .movie-image img{
             width:100%;
@@ -56,15 +56,47 @@
         .movie-detail{
             color:gray;
         }
+        .movie-card:hover{
+            box-shadow: 10px 10px 10px black;
+            
+            transform:translateY(5px);
+        }
+        .booking{
 
-
-        .headingss{
-            text-align:center;
-            font-family:sans-serif;
-            margin:20px 0px;
+             display:flex;
+            justify-content:right;
+            text-align:right;
+            
             
         }
+        .booki{
+            
+          position:fixed; 
+           background-color: rgb(3, 135, 71);
+            
+            padding:2px;
+            border-radius:10px;
+            width:250px;
+            height:60px;
+            margin:5px;
+            color: rgb(249, 250, 249);
+           
+        }
+        .booki:hover{
+            background-color: rgb(3, 71, 135);
+            transform:translateY(5px);
 
+        }
+        .book-now-btn{
+            background-color:black;
+            color:white;
+            border-radius:8px;
+            padding:8px 16px;
+        }
+        .book-now-btn:hover{
+            transform:scaleY(1.15);
+            background-color:rgb(217, 119, 234);
+        }
         @keyframes cardAnimation{
             from{
                 opacity:0;
@@ -72,7 +104,7 @@
             }
             to{
                 opacity:1;
-                transform:translateY(0px);
+                transform:translateY(0);
             }
         }
         .movie-card:nth-child(1){
@@ -84,13 +116,30 @@
         .movie-card:nth-child(3){
             animation-delay:0.3s;
         }
+        .movie-card:nth-child(4){
+            animation-delay:0.4s;
+        }
+        .movie-card:nth-child(5){
+            animation-delay:0.5s;
+        }
+        .movie-card:nth-child(6){
+            animation-delay:0.6s;
+        }
+        .movie-card:nth-child(7){
+            animation-delay:0.7s;
+        }
+
     </style>
+
 </head>
 <body>
-    <div class="headingss">
-            <h2>recommended movies</h2>
-        
+    <div class="booking">
+        <button class="booki">booking confirmed!</button>
+
     </div>
+     
+        
+    
     <div class="cards-container">
         
         
@@ -103,6 +152,7 @@
             <div class="movie-info">
                 <div class="movie-title">Hanuman Ansh</div>
                 <span class="movie-detail">devotional/drama</span>
+                <button class="book-now-btn">Book Now</button>
 
             </div>
         </div>
@@ -113,6 +163,7 @@
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
                 <span class="movie-detail">action/crime/thriller</span>
+                 <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -122,6 +173,7 @@
             <div class="movie-info">
                 <div class="movie-title">Toxic: A fairy tale for grown-ups</div>
                 <span class="movie-detail">action/crime/period/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -131,6 +183,7 @@
             <div class="movie-info">
                 <div class="movie-title">Awarapan 2</div>
                 <span class="movie-detail">action/crime/romantic</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -140,6 +193,7 @@
             <div class="movie-info">
                 <div class="movie-title">Awarapan 2</div>
                 <span class="movie-detail">action/crime/romantic</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -149,6 +203,7 @@
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
                 <span class="movie-detail">action/crime/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -158,10 +213,11 @@
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
                 <span class="movie-detail">action/crime/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
 
-        <!--difference between grid and flex-->
+       
        
 
 
