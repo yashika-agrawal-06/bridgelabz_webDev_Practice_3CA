@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width:30vw;
+            background-color:rgb(99, 55, 55);
+        }
+        .box{
+            height:100px;
+            width:100px;
+            background-color:rgb(244, 2, 204);
+            /*animation-name: box-animation;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;*/
+            animation:box-animation 2s ease-out 3 forwards;
+            
+            
+        }
+
+        @keyframes box-animation{
+            from{
+                background-color:rgb(244, 2, 204);
+            }
+            to{
+                transform: translateX(1000px);
+                background-color:rgb(2, 244, 204);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>
