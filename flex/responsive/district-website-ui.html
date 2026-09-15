@@ -4,89 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .cards-container{
-            
-            background-color:rgb(253, 253, 253);
-            font-family:sans-serif;
-            display:grid;
-            grid-template-columns: repeat(3,1fr);
-           /* grid-template-rows: repeat(3,33%);
-            grid-row-gap:10%;
-            */
-            gap:50px;
-           
-            justify-items: center;
-          
-            
-        }
-        .movie-card{
-            width:200px;
-            border: 1px solid;
-            border-color:#e5e7eb;
-            background-color:white;
-            border-radius:16px;
-            overflow:hidden;
-            
-            flex-direction:column;
-            transition:all 0.2s;
-            animation:cardAnimation 0.6s ease;
-            
-            
-            
-        }
-
-        .movie-card:hover{
-            
-            transform:scaleY(1.1);
-        }
-        .movie-image img{
-            width:100%;
-            height:auto;
-            object-fit:cover;
-            display:flex;
-        }
-        .movie-title{
-            font-weight:600;
-
-        }
-        .movie-info{
-            padding:8px;
-        }
-        .movie-detail{
-            color:gray;
-        }
-
-
-        .headingss{
-            text-align:center;
-            font-family:sans-serif;
-            margin:20px 0px;
-            
-        }
-
-        @keyframes cardAnimation{
-            from{
-                opacity:0;
-                transform:translateY(30px);
-            }
-            to{
-                opacity:1;
-                transform:translateY(0px);
-            }
-        }
-        .movie-card:nth-child(1){
-            animation-delay:0.1s;
-        }
-        .movie-card:nth-child(2){
-            animation-delay:0.2s;
-        }
-        .movie-card:nth-child(3){
-            animation-delay:0.3s;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="district-website-ui.css">
 </head>
 <body>
     <header class="header">
@@ -134,10 +52,14 @@
     </div>
 
 </header>
-    <div class="headingss">
-            <h2>recommended movies</h2>
-        
+
+    <div class="booking">
+        <button class="booki">booking confirmed!</button>
+
     </div>
+     
+        
+    
     <div class="cards-container">
         
         
@@ -150,6 +72,7 @@
             <div class="movie-info">
                 <div class="movie-title">Hanuman Ansh</div>
                 <span class="movie-detail">devotional/drama</span>
+                <button class="book-now-btn">Book Now</button>
 
             </div>
         </div>
@@ -159,7 +82,11 @@
             </div>
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
+                <span class="tooltip">
                 <span class="movie-detail">action/crime/thriller</span>
+                </span>
+                 <button class="book-now-btn">Book Now</button>
+                 
             </div>
         </div>
         <div class="movie-card">
@@ -169,6 +96,7 @@
             <div class="movie-info">
                 <div class="movie-title">Toxic: A fairy tale for grown-ups</div>
                 <span class="movie-detail">action/crime/period/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -178,6 +106,7 @@
             <div class="movie-info">
                 <div class="movie-title">Awarapan 2</div>
                 <span class="movie-detail">action/crime/romantic</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -187,6 +116,7 @@
             <div class="movie-info">
                 <div class="movie-title">Awarapan 2</div>
                 <span class="movie-detail">action/crime/romantic</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -196,6 +126,7 @@
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
                 <span class="movie-detail">action/crime/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
         <div class="movie-card">
@@ -205,10 +136,11 @@
             <div class="movie-info">
                 <div class="movie-title">Mirzapur: the movie</div>
                 <span class="movie-detail">action/crime/thriller</span>
+                <button class="book-now-btn">Book Now</button>
             </div>
         </div>
 
-        <!--difference between grid and flex-->
+       
        
 
 
