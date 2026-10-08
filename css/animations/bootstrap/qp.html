@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+    .header{
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .n{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav{
+        display: flex;
+        gap: 10px;
+        
+    }
+    .sidebar{
+        position: fixed;
+        left: -250px;
+        
+    }
+    .sidebar a{
+        display: block;
+
+
+    }
+    body:has(#toggle:checked) .sidebar{
+        animation: slideIn 0.3s forwards ease-in-out;
+    }
+
+    @keyframes slideIn{
+        from{
+            transform:translateX(0);
+        }
+        to{
+            transform:translateX(250px);
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <div>
+            <input type="checkbox" id="toggle"><label for="toggle">X</label>
+        </div>
+        <div class="h">
+            <h1>University Portal</h1>
+        </div>
+        <div class="n">
+            <div class="nav">
+                <h3>Home</h3>
+                <h3>Courses</h3>
+                <h3>Profile</h3>
+            </div>
+        </div>
+    </div>
+    
+    <aside class="sidebar">
+        <a href="#">A</a>
+        <a href="#">A</a>
+        <a href="#">A</a>
+        <a href="#">A</a>
+        <a href="#">A</a>
+    </aside>
+</body>
+</html>

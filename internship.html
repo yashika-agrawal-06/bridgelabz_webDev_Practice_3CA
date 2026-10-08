@@ -4,6 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 30px 20px;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f3f4f6, #e0f2fe);
+        color: #1f2937;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #111827;
+        font-size: 2rem;
+    }
+
+    form {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 30px 25px;
+        border-radius: 18px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #374151;
+    }
+
+    input, select, button, textarea {
+        font: inherit;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 18px;
+        border: 1px solid #d1d5db;
+        border-radius: 10px;
+        background: #f9fafb;
+        outline: none;
+        transition: 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="date"]:focus,
+    input[type="password"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    }
+
+    input[type="radio"] {
+        accent-color: #2563eb;
+        margin-right: 8px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 10px;
+        border: 1px dashed #94a3b8;
+        border-radius: 10px;
+        background: #f8fafc;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 18px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 8px;
+        transition: 0.2s ease;
+    }
+
+    button[type="submit"] {
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
+        color: #fff;
+    }
+
+    button[type="submit"]:hover {
+        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    }
+
+    button[type="reset"] {
+        background: #e5e7eb;
+        color: #111827;
+    }
+
+    button[type="reset"]:hover {
+        background: #d1d5db;
+    }
+
+    br {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        form {
+            padding: 20px 15px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
 </head>
 <body>
     <h1>Internship Application Form</h1>

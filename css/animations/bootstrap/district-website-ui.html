@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f5f7f5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            background: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-links .nav-link {
+            color: #222;
+            font-weight: 600;
+            border-radius: 999px;
+            padding: 0.6rem 1rem;
+        }
+
+        .nav-links .nav-link.active {
+            background: #efe5ff;
+            color: #5935d5;
+        }
+
+        .booking {
+            margin: 1.5rem auto 1rem;
+            text-align: center;
+        }
+
+        .booki {
+            border-radius: 999px;
+            padding: 0.7rem 1.3rem;
+            min-width: 220px;
+            border: 1px solid #bfe8c8;
+            background: #eaf8ee;
+            color: #0e8b42;
+            animation: notificationSlide 2s ease forwards;
+        }
+
+        .movie-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+        }
+
+        .movie-image img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .movie-info {
+            padding: 1rem;
+            background: white;
+        }
+
+        .movie-title {
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .movie-detail {
+            display: inline-block;
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .book-now-btn {
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        @keyframes notificationSlide {
+            0% { opacity: 0; transform: translateY(-8px); }
+            15%, 80% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-8px); }
+        }
+
+        @media (max-width: 767px) {
+            .location { display: none; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex align-items-center justify-content-between py-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="logo">
+                    <img src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg" class="img-fluid" style="width: 110px; height:auto; filter: invert(0);">
+                </div>
+
+                <div class="location d-flex align-items-center gap-2 border-start ps-3">
+                    <span class="location-icon fs-4 text-primary">⌖</span>
+                    <div>
+                        <strong class="d-block">Gurugram</strong>
+                        <small class="d-block text-muted">Haryana</small>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav nav-links align-items-center">
+                <a href="#" class="nav-link active">For you</a>
+                <a href="#" class="nav-link">Dining</a>
+                <a href="#" class="nav-link">Movies</a>
+                <a href="#" class="nav-link">Events</a>
+                <a href="#" class="nav-link">Comedy</a>
+                <a href="#" class="nav-link">Stores</a>
+                <a href="#" class="nav-link">Activities</a>
+                <a href="#" class="nav-link">Play</a>
+            </nav>
+
+            <div class="d-flex align-items-center gap-3">
+                <span class="fs-3 text-primary">⌕</span>
+                <div class="profile rounded-circle bg-light text-white d-flex align-items-center justify-content-center" style="width: 38px; height:38px; background: linear-gradient(135deg, #9b8cff, #5d3dd8);">♙</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="booking">
+        <button class="booki">booking confirmed!</button>
+    </div>
+
+    <div class="container py-3">
+        <div class="row g-4 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS43LzEwICA0OUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00507738-kfbeunsutt-portrait.jpg" alt="Hanuman Ansh">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Hanuman Ansh</div>
+                        <span class="movie-detail">devotional/drama</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg" alt="Mirzapur: the movie">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Mirzapur: the movie</div>
+                        <span class="movie-detail">action/crime/thriller</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MS42TSsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00378770-aqvqxdpnut-portrait.jpg" alt="Toxic: A fairy tale for grown-ups">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Toxic: A fairy tale for grown-ups</div>
+                        <span class="movie-detail">action/crime/period/thriller</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg" alt="Awarapan 2">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Awarapan 2</div>
+                        <span class="movie-detail">action/crime/romantic</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgODUuNEsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439318-xckxsyyekr-portrait.jpg" alt="Awarapan 2">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Awarapan 2</div>
+                        <span class="movie-detail">action/crime/romantic</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg" alt="Mirzapur: the movie">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Mirzapur: the movie</div>
+                        <span class="movie-detail">action/crime/thriller</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS43LzEwICA0OUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00507738-kfbeunsutt-portrait.jpg" alt="Hanuman Ansh">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Hanuman Ansh</div>
+                        <span class="movie-detail">devotional/drama</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="movie-card card h-100">
+                    <div class="movie-image">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTY5SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00417686-slhjzpafpd-portrait.jpg" alt="Mirzapur: the movie">
+                    </div>
+                    <div class="movie-info">
+                        <div class="movie-title">Mirzapur: the movie</div>
+                        <span class="movie-detail">action/crime/thriller</span>
+                        <button class="btn btn-dark w-100 book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
