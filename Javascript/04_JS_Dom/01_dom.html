@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title" class="heading">welcome to learning DOM</h1>
+    <p id="content" >hello world</p>
+
+    <button id="change-btn">change heading</button>
+    <h1>list of crs of class 3CA</h1>
+    <button id="add-cr"> Add CRs</button>
+    <script>
+        
+        const heading = document.querySelector('#title')
+        const changeButton=document.getElementById('change-btn')
+
+        changeButton.addEventListener('mouseover', function(){
+            heading.textContent="heading is changed by click event"
+            heading.style.color='red'
+        })
+
+
+        function addCRs(name){
+            const ul=document.createElement('ul')
+            const li=document.createElement('li')
+            ul.appendChild(li)
+            li.innerText=`${name}`
+            console.log(ul)
+            document.body.appendChild(ul)
+        }
+
+        const addCr=document.getElementById('add-cr')
+        addCr.addEventListener('click',function(){
+            addCRs('yashika')
+            addCRs('vivek')
+            addCRs('vaibhava')
+
+        })
+
+
+        // const ul=document.createElement('ul')
+        // const li=document.createElement('li')
+        // ul.appendChild(li)
+        // li.innerText='yashika'
+        // console.log(ul)
+        // document.body.appendChild(ul)
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
