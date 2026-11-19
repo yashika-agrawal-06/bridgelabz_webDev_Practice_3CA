@@ -24,12 +24,19 @@
 
 
         function addCRs(name){
+            
+
             const ul=document.createElement('ul')
             const li=document.createElement('li')
             ul.appendChild(li)
             li.innerText=`${name}`
             console.log(ul)
             document.body.appendChild(ul)
+            addEventListener('keydown',function(event){
+                if(event==='Enter'){
+                    addCRs()
+                }
+            })
         }
 
         const addCr=document.getElementById('add-cr')
